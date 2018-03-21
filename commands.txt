@@ -1,0 +1,37 @@
+git add l1.txt
+git commit l1.txt -m "Initial commit"
+nano l1.txt
+git add l1.txt
+git commit l1.txt -m "modify ll.txt"
+git remote add origin https://github.com/martinaveljanovska132102/lab-1.git
+git push
+git reset
+	Unstaged changes after reset:
+	M       l1.txt
+	
+git checkout -b logging
+Switched to a new branch 'logging'
+M       l1.txt
+
+git log > log.txt
+
+git push origin logging
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (6/6), 467 bytes | 116.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/martinaveljanovska132102/lab-1.git
+ * [new branch]      logging -> logging
+
+132102@lab200ab-ws39 MINGW64 ~/Downloads/lab1 (logging)
+$ git checkout master
+132102@lab200ab-ws39 MINGW64 ~/Downloads/lab1 (master)
+$ git merge logging
+Already up to date.
+132102@lab200ab-ws39 MINGW64 ~/Downloads/lab1 (master)
+$ git push origin master
+
+git checkout -b allcomands
+nano commands.txt
